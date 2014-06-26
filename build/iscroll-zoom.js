@@ -13,7 +13,7 @@ var utils = (function () {
 	var _elementStyle = document.createElement('div').style;
 	var _vendor = (function () {
 		var vendors = ['t', 'webkitT', 'MozT', 'msT', 'OT'],
-			transform,
+			te.prefixPointerEvent = function (poiransform,
 			i = 0,
 			l = vendors.length;
 
@@ -49,7 +49,7 @@ var utils = (function () {
 
 	me.prefixPointerEvent = function (pointerEvent) {
 		return window.MSPointerEvent ? 
-			'MSPointer' + pointerEvent.charAt(9).toUpperCase() + pointerEvent.substr(10):
+			'MSPointer' + pointerEvent.charAt(7).toUpperCase() + pointerEvent.substr(8):
 			pointerEvent;
 	};
 
